@@ -5,3 +5,7 @@ body {
 /* .header {
     background-color: #003399
 } */
+
+.col {
+    border: solid 2px #003399
+}
