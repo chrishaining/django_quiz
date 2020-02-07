@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block content %}
+	{% for card in cards %}
+		<h2> Question {{card.id}}: {{ card.question }}</h2>
+	{% endfor %}
+{% endblock %}
