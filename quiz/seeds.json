@@ -3,14 +3,16 @@
         "model": "cards.Card",
         "fields": {
             "question": "What are the SOLID principles?",
-            "answer": "S - Single-responsiblity principle. O - Open-closed principle. L - Liskov substitution principle. I - Interface segregation principle. D - Dependency Inversion Principle."
+            "answer": "S - Single-responsiblity principle. O - Open-closed principle. L - Liskov substitution principle. I - Interface segregation principle. D - Dependency Inversion Principle.",
+            "url": "https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design"
         }
     },
     {
         "model": "cards.Card",
         "fields": {
             "question": "What are the elements of APIE?",
-            "answer": "Abstraction, Polymorphism, Inheritance and Encapsulation. These are known as the four pillars of OOP."
+            "answer": "Abstraction, Polymorphism, Inheritance and Encapsulation. These are known as the four pillars of OOP.",
+            "url": "https://www.linkedin.com/pulse/4-pillars-object-oriented-programming-pushkar-kumar/"
         }
     }
 ]
