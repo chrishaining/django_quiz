@@ -2,10 +2,30 @@ body {
     color: #003399;
 }
 
-/* .header {
-    background-color: #003399
-} */
-
 .col {
     border: solid 2px #003399
+}
+
+.header {
+    background-color: #003399
+}
+
+.navbar-toggler-icon {
+    color: white;
+    /* background-color: #003399; */
+    padding-left: 20px;
+    font-size: 200%
+  } 
+
+.navbar-brand {
+    color: white
+}
+
+.navbar-brand:hover {
+    color: #ffd700
+} 
+
+button {
+    background-color: #003399;
+    color: white
 }
