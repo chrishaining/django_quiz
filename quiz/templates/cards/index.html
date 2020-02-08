@@ -1,14 +1,10 @@
 {% extends "base.html" %}
 
-<!-- {% block extra_js%}
-<script src="http://malsup.github.com/jquery.form.js"></script>
-{% endblock %} -->
-
 {% block content %}
 
-<div class="container-fluid">
-	<!-- <div class="row"> -->
-		<!-- <div class="col"> -->
+
+
+
 		<table class="table table-striped table-bordered">
 			<thead>
 				<th>ID</th>
@@ -22,17 +18,17 @@
 					<td>{{card.id}}</td>
 					<td>{{card.question}}</td>
 					<td>
-						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">View
-							Answer
+						<!-- modal. note that to make sure there is a unique modal for each item in loop, I add card.id in the data-target -->
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal{{ card.id }}">View
+							Answer 
 						</button>
-						<!-- Modal -->
-						<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+						<div class="modal fade" id="myModal{{ card.id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
 							aria-hidden="true">
 							<div class="modal-dialog" role="document">
 								<div class="modal-content">
 									<div class="modal-header">
 										<h5 class="modal-title" id="myModalLabel">
-											{{card.question}}
+											{{card.id}}
 										</h5>
 										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 											<span aria-hidden="true">&times;</span>
@@ -56,7 +52,5 @@
 				{% endfor %}
 			</tbody>
 		</table>
-	<!-- </div> -->
-</div>
 
 {% endblock %}

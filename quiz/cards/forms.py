@@ -1,6 +1,6 @@
 from django import forms
 
-from .models import *
+from .models import Card
 
 class CardForm(forms.ModelForm):
     card = forms.ModelChoiceField(Card.objects.all())

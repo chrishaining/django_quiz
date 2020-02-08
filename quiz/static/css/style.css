@@ -22,10 +22,10 @@ body {
 }
 
 .navbar-brand:hover {
-    color: #ffd700
+    color: #fffadd
 } 
 
 button {
     background-color: #003399;
-    color: white
+    color: #fffadd
 }
