@@ -3,6 +3,9 @@ from django.http import HttpResponse
 from cards.models import *
 from .forms import *
 from django.contrib.auth.decorators import login_required
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
+from django.urls import reverse_lazy
+
 
 # Create your views here.
 def index(request):
@@ -21,3 +24,10 @@ def card_new(request):
         form = CardForm()
         return render(request, 'cards/card_form.html', {'form': form})
 
+
+##
+
+class CardUpdate(UpdateView):
+    model = Card
+    fields = ['question', 'answer', 'url']
+    success_url = reverse_lazy('index')
