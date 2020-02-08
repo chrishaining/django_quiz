@@ -32,3 +32,5 @@ class CardUpdate(UpdateView):
 class CardDelete(DeleteView):
     model = Card
     success_url = reverse_lazy('index')
+
+    
