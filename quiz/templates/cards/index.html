@@ -2,13 +2,20 @@
 
 {% block content %}
 
+<div class="container-fluid">
+	<div class="row">
+		<div class="col">
+			<h1>Hello from the quiz index!</h1>
+		</div>
+	</div>
+	<div class="row">
 		<table class="table table-striped table-bordered">
 			<thead>
 				<th>ID</th>
 				<th>Question</th>
-				<th>Answer</th>
+				<th></th>
 			</thead>
-			
+
 			<tbody>
 				{% for card in cards %}
 				<tr>
@@ -16,30 +23,34 @@
 					<td>{{card.question}}</td>
 					<td>
 						<!-- modal. note that to make sure there is a unique modal for each item in loop, I add card.id in the data-target -->
-						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal{{ card.id }}">View
-							Answer 
+						<button type="button" class="btn btn-primary" data-toggle="modal"
+							data-target="#myModal{{ card.id }}">View
+							Answer
 						</button>
-						<div class="modal fade" id="myModal{{ card.id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-							aria-hidden="true">
+						<div class="modal fade" id="myModal{{ card.id }}" tabindex="-1" role="dialog"
+							aria-labelledby="myModalLabel" aria-hidden="true">
 							<div class="modal-dialog" role="document">
 								<div class="modal-content">
 									<div class="modal-header">
 										<h5 class="modal-title" id="myModalLabel">
 											{{card.question}}
 										</h5>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
 									</div>
 									<div class="modal-body">
 										{{card.answer}}
 
 									</div>
 									<div class="modal-footer">
-										<p><a href="{{card.url}}" target="_blank" class="tooltip-test" title="Tooltip">Learn more</a> 
-											<a href="/cards/card/{{ card.id }}/update">Update</a>
-											<a href="/cards/card/{{ card.id }}/delete">Delete</a>
-										</p>
+											<button type="button" class="btn btn-secondary">
+												<a href="{{card.url}}" target="_blank">Learn
+													more</a>
+											</button>
+											<button type="button" class="btn btn-secondary"> <a
+													href="/cards/card/{{ card.id }}/update">Update</a>
+											</button>
+											<button type="button" class="btn btn-secondary">
+												<a href="/cards/card/{{ card.id }}/delete">Delete</a>
+											</button>
 										<button type="button" class="btn btn-secondary"
 											data-dismiss="modal">Close</button>
 									</div>
@@ -51,5 +62,6 @@
 				{% endfor %}
 			</tbody>
 		</table>
-
+	</div>
+</div>
 {% endblock %}

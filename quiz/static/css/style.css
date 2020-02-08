@@ -2,12 +2,25 @@ body {
     color: #003399;
 }
 
+.row {
+    margin: 5%
+}
+
 .col {
-    border: solid 2px #003399
+    border: solid 5px #003399;
+    background-color: #fffd700
 }
 
 .header {
     background-color: #003399
+}
+
+.table {
+    border: solid 5px #003399
+}
+
+td {
+    border: solid 2px #003399
 }
 
 .navbar-toggler-icon {
@@ -22,10 +35,54 @@ body {
 }
 
 .navbar-brand:hover {
-    color: #fffadd
+    color: #ffd700
 } 
 
-button {
+.button-primary {
     background-color: #003399;
-    color: #fffadd
+    color: #ffd700
 }
+
+.button-secondary {
+    background-color: #003399;
+    color: #ffd700
+}
+
+a {
+    color: white
+}
+
+/* no evidence this does anything yet */
+a.hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* no evidence this works yet */
+button.close {
+    color: white
+}
+
+button.close.hover {
+    color: #ffd700
+}
+
+/* .modal-dialog {
+    height: 300%;
+    width: 200%
+} */
+
+.modal-header {
+    justify-content: center;
+    background-color: #003399;
+    color: white
+}
+
+.modal-body {
+    padding: 5%
+}
+
+.modal-footer {
+    padding: 5%
+}
+
