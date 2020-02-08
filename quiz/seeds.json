@@ -14,5 +14,23 @@
             "answer": "Abstraction, Polymorphism, Inheritance and Encapsulation. These are known as the four pillars of OOP.",
             "url": "https://www.linkedin.com/pulse/4-pillars-object-oriented-programming-pushkar-kumar/"
         }
+    },
+    {
+        "model": "cards.MultipleChoiceCard",
+        "fields": {
+            "question": "What does the A in APIE stand for? A: Abstraction? B: Alphabet? C: Algorithm?",
+            "answer": "A",
+            "url": "https://www.linkedin.com/pulse/4-pillars-object-oriented-programming-pushkar-kumar/"
+        }
+    },
+
+    {
+        "model": "cards.MultipleChoiceCard",
+        "fields": {
+            "question": "What does the S in SOLID? A: Subtraction? B: Simplicity? C: Single-responsibility?",
+            "answer": "C",
+            "url": "https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design"
+        }
     }
+
 ]

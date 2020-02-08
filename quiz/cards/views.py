@@ -24,6 +24,12 @@ def card_new(request):
         form = CardForm()
         return render(request, 'cards/card_form.html', {'form': form})
 
+@login_required
+def test_yourself(request):
+    multiple_choice_cards = MultipleChoiceCard.objects.all()
+    return render(request, "cards/test_yourself.html", locals())
+
+
 class CardUpdate(UpdateView):
     model = Card
     fields = ['question', 'answer', 'url']

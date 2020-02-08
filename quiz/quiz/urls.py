@@ -21,6 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('cards/', include('cards.urls')),
     path('accounts/login/', LoginView.as_view(), name='login'),
-    path('accounts/logout/', LogoutView.as_view(next_page='/cards'), name='logout')
+    path('accounts/logout/', LogoutView.as_view(next_page='/cards'), name='logout'),
 ]
 

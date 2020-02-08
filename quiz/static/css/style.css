@@ -8,7 +8,7 @@ body {
 
 .col {
     border: solid 5px #003399;
-    background-color: #fffd700
+    background-color: #ffd700
 }
 
 .header {
@@ -58,6 +58,11 @@ a.hover {
     text-decoration: none;
 }
 
+button.save.btn.btn-default {
+    background-color: #003399;
+    color: white
+}
+
 /* no evidence this works yet */
 button.close {
     color: white
@@ -86,3 +91,13 @@ button.close.hover {
     padding: 5%
 }
 
+form {
+    background-color: #ffd700;
+    border: solid 2px #003399;
+    padding: 10px;
+    margin: 10px;
+}
+
+input {
+    width: 100%;
+}

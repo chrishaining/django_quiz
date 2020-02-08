@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col">
+            <h1>Test yourself!</h1>
+            <p>This will be a selection of questions that the user selects an answer for. It's just a table at the moment, but I may turn it into a form. The user should have a way to select answers (e.g. radio or drop down) and a way to submit their selection. It could be a selection per question or per quiz. If it's per question, that may mean one form per question?
+                <a href="https://stackoverflow.com/questions/47867760/django-quiz-app-model-for-multiple-choice-questions"></a>
+            </p>
+		</div>
+	</div>
+	<div class="row">
+		<table class="table table-striped table-bordered">
+			<thead>
+				<th>ID</th>
+				<th>Question</th>
+				<th>Options</th>
+			</thead>
+
+			<tbody>
+				{% for card in multiple_choice_cards %}
+				<tr>
+					<td>{{card.id}}</td>
+					<td>{{card.question}}</td>
+					<td>Give the user options
+                        {% for choice in card.CHOICES %}
+                        choice: {{choice}}
+                        {% endfor %}
+                        
+
+                    </td>
+				</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+	</div>
+</div>
+{% endblock %}
