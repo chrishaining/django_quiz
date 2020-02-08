@@ -2,8 +2,8 @@ from django.db import models
 
 # Create your models here.
 class Card(models.Model):
-    question = models.CharField(max_length=255)
-    answer = models.CharField(max_length=255)
+    question = models.TextField()
+    answer = models.TextField()
     url = models.URLField(max_length=250, blank=True)
 
     def __str__(self):
@@ -17,7 +17,7 @@ class Card(models.Model):
     # could have a separate type of card for multiple choice
 
 class MultipleChoiceCard(models.Model):
-    question = models.CharField(max_length=255)
+    question = models.TextField()
 
     A = 'A'
     B = 'B'
