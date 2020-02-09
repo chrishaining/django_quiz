@@ -70,21 +70,32 @@ body {
     color: #ffd700
 }
 
+button.btn.btn-primary {
+    background-color: #003399;
+    color: white;
+    margin: 10px;
+}
+
+button.btn.btn-primary:hover {
+    color: #ffd700;
+}
+
 button.btn.btn-secondary {
     background-color: #003399;
     color: white;
     margin: 10px;
 }
 
+button.btn.btn-secondary:hover {
+    color: #ffd700;
+}
+
 a {
     color: white
 }
 
-
-/* no evidence this does anything yet */
-
-a.hover {
-    color: white;
+a:hover {
+    color: #ffd700;
     text-decoration: none;
 }
 
@@ -94,16 +105,21 @@ button.save.btn.btn-default {
     margin: 10px
 }
 
+button.save.btn.btn-default:hover {
+    color: #ffd700;
+}
+
 
 /* no evidence this works yet */
 
-button.close {
+
+/* button.close {
     color: white
 }
 
 button.close.hover {
     color: #ffd700
-}
+} */
 
 
 /* .modal-dialog {
