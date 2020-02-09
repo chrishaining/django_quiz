@@ -4,7 +4,7 @@ body {
 }
 
 .container-fluid {
-    margin-top: 50px
+    margin-top: 100px
 }
 
 
@@ -31,9 +31,10 @@ body {
     margin: 10px;
 }
 
-td {
+
+/* td {
     border: solid 2px #003399
-}
+} */
 
 #navbarMenu {
     background-color: #003399
@@ -72,6 +73,7 @@ td {
 button.btn.btn-secondary {
     background-color: #003399;
     color: white;
+    margin: 10px;
 }
 
 a {
@@ -89,6 +91,7 @@ a.hover {
 button.save.btn.btn-default {
     background-color: #003399;
     color: white;
+    margin: 10px
 }
 
 
