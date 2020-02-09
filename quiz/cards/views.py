@@ -29,12 +29,13 @@ def test_yourself(request):
     multiple_choice_cards = MultipleChoiceCard.objects.all()
     return render(request, "cards/test_yourself.html", locals())
 
-
+# @login_required
 class CardUpdate(UpdateView):
     model = Card
     fields = ['question', 'answer', 'url']
     success_url = reverse_lazy('index')
 
+# @login_required
 class CardDelete(DeleteView):
     model = Card
     success_url = reverse_lazy('index')

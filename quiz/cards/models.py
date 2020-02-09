@@ -1,4 +1,5 @@
 from django.db import models
+# from multiselectfield import MultiSelectField
 
 # Create your models here.
 class Card(models.Model):
@@ -30,6 +31,8 @@ class MultipleChoiceCard(models.Model):
     ]
 
     answer = models.CharField(max_length=6, choices=CHOICES)
+    # answer = MultiSelectField(choices=CHOICES, max_choices=3, max_length=3)
+
     
     url = models.URLField(max_length=250, blank=True)
     

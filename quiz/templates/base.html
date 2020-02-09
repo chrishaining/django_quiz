@@ -27,6 +27,7 @@
                     {% if user.is_authenticated %}
                     <li class="nav"><a class="navbar-brand " href="{% url 'card_new' %}">Add Card</a></li>
                     <li class="nav"><a class="navbar-brand" href="{% url 'test_yourself' %}">Test Yourself</a></li>
+                    <li class="nav"><a class="navbar-brand" href="{% url 'logout' %}">Log out</a></li>
                     {% else %}
                     <li class="nav"><a class="navbar-brand" href="{% url 'login' %}">Log in</a></li>
                     {% endif %}
